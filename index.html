@@ -33,12 +33,24 @@
                     <input type="reset" class="btn btn-secondary"  >
                 </form>
             </div>
-    </div>
+    </div>   
     
     <script>
         function login(){
-            let 
+            let u=document.getElementById("uname").value;
+            let p=document.getElementById("pwd").value;
+
+            if(u==="" || p===""){ 
+            alert("Please put the required information.");
         }
+
+        else if(u==="catro67" && p==="12345"){
+            alert("Logged in successfully.")
+        }
+        else{
+            alert("Unsuccessful login, Please try again.")
+        }
+    }
         </script>
 </body>
 </html>
